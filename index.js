@@ -23,11 +23,15 @@ app.get('/appointments', (req, res) => {
 });
 
 app.get('/ourservices', (req, res) => {
-	res.render('ourservices', {});
+	res.render('ourservices', {
+		mainText: 'Hello Customers',
+	});
 });
 
 app.get('/ourbarbers', (req, res) => {
-	res.render('ourbarbers', {});
+	res.render('ourbarbers', {
+		ourTeam: 'Meet Our Team Members',
+	});
 });
 
 app.get('/contact', (req, res) => {
