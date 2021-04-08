@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saloon</title>
+    <link rel = "icon" href ="favicon.ico" 
+        type = "image/x-icon">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<style>
+    .top-navbar{
+    position: relative;
+    z-index: 10;
+}
+
+.top-navbar .navbar{
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 100;
+}
+.top-navbar .navbar-light .navbar-nav .nav-link{
+    color: #010101;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #d4061e;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none;
+     box-shadow: 20px 50px 60px rgba(0,0,0,0.5);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.navbar-light .navbar-toggler:hover{
+    background: #d4061e;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+ .bg-f{
+    background-image: url("footer.jpg");
+    background-attachment: scroll;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bg-f::before {
+    background: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}
+.footer-area .container{
+    position: relative;
+    z-index: 1;
+}
+.footer-area h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+    margin-bottom: 10px;
+}
+.footer-area p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-bottom: 10px;
+}
+.footer-area p.lead{
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.footer-area p.lead a{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.footer-area p.lead a:hover{
+    color: #d0a772;
+}
+.footer-area p a{
+    font-size: 18px;
+    color: #ffffff;
+}
+.footer-area p a:hover{
+    color: #d0a772;
+}
+
+</style>    
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    {{> header}}
+   <br><br><br><br> <div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <br><br><br><a class="nav-link active" href="#section1">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Barber Schools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Length</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Curriculum</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Cost</a>
+            <a class="dropdown-item" href="#section42">Curriculum</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8">
+      <div class="media border p-3">
+    <img src="history.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+    <div class="media-body">
+      <div id="section1" class="bg-transparent">    
+        <h1 style="color: red">History</h1>
+        <p style="color: black">The barber's trade has a long history: razors have been found among relics of the Bronze Age (around 3500 BC) in Egypt. The first barbering services were performed by Egyptians in 5000 B.C. with instruments they had made from oyster shells or sharpened flint.[1] In ancient Egyptian culture, barbers were highly respected individuals. Priests and men of medicine are the earliest recorded examples of barbers.[2] In addition, the art of barbering played a significant role across continents. Mayan, Aztec, Iroquois, Viking and Mongolian civilizations utilized shave art as a way to distinguish roles in society and wartime.[3] Men in Ancient Greece would have their beards, hair, and fingernails trimmed and styled by the κουρεύς (cureus), in an agora (market place) which also served as a social gathering for debates and gossip.</p>
+
+<p style="color: black">Barbering was introduced to Rome by the Greek colonies in Sicily in 296 BC, and barbershops quickly became very popular centres for daily news and gossip. A morning visit to the tonsor became a part of the daily routine, as important as the visit to the public baths, and a young man's first shave (tonsura) was considered an essential part of his coming of age ceremony. A few Roman tonsores became wealthy and influential, running shops that were favourite public locations of high society; however, most were simple tradesmen, who owned small storefronts or worked in the streets for low prices.</p>
+      </div>
+          </div>
+  </div>
+
+       <div class="media border p-3">
+    <img src="school.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+    <div class="media-body">
+      <div id="section2" class="bg-transparent"> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: red">Barber Schools</h1>
+        <p style="color: red ">In 1893, A. B. Moler of Chicago, established a school for barbers. This was the first institution of its kind in the world, and its success was apparent from its very start. It stood for higher education in the ranks, and the parent school was rapidly followed by branches in nearly every principal city of the United States. In the beginning of barber schools, only the practical work of shaving, hair-cutting, facial treatments, etc., was taught as neither the public nor the profession were ready to accept scientific treatments of hair, skin and scalp. Not until about 1920 was much effort made to professionalize the work.[2]</p>
+
+Training to be a barber is achieved through various means around the world. In the US, barber training is carried out at "Barber Schools".
+
+<p style="color: red">Cost—Many states require a barber license in order to practice barbering professionally. The cost of barber school varies from state to state, and also from metro area to metro area. Schools in larger metropolitan areas tend to cost more than those located in more rural towns. Brand names can also affect the cost of barber school. Most barber schools cost between $6,500 and $10,000 to complete. Because each state has different minimums for training hours, the length and cost of the program can vary accordingly. Some schools tuition includes supplies and textbooks, whereas others do not. Barber license exam fees typically range from $50 to $150</p>
+      </div> 
+          </div>
+  </div> 
+  <div class="media border p-3">
+    <img src="length.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+    <div class="media-body">      
+      <div id="section3" class="bg-transparent">
+        <br>
+        <br>
+        <br>
+        <br>         
+        <h1>Length</h1>
+        <p>Most states require the same amount of training hours for barbers as they do for cosmetologists. The number of hours required ranges from 800 to 2,000 training hours, depending on the state's licensing requirements. Most programs can be completed in 15 months or fewer.</p>
+     </div> 
+          </div>
+  </div> 
+      <div class="media border p-3">
+    <img src="cost.webp" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+    <div class="media-body">
+      <div id="section41" class="bg-transparent" >
+      <br>
+        <br>
+        <br>
+        <br>         
+        <h1>Cost</h1>
+        <p>Many states require a barber license in order to practice barbering professionally. The cost of barber school varies from state to state, and also from metro area to metro area. Schools in larger metropolitan areas tend to cost more than those located in more rural towns. Brand names can also affect the cost of barber school. Most barber schools cost between $6,500 and $10,000 to complete. Because each state has different minimums for training hours, the length and cost of the program can vary accordingly. Some schools tuition includes supplies and textbooks, whereas others do not. Barber license exam fees typically range from $50 to $150</p>
+      </div>
+      </div>
+      </div>  
+       <div class="media border p-3">
+    <img src="curriculm.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+    <div class="media-body">    
+      <div id="section42" class="bg-transparent">
+      <br>
+        <br>
+        <br>
+        <br>         
+        <h1>curriculums</h1>
+        <p>The barber school curriculum consists of hair cutting, coloring and styling for men's hair and women's short hair. Chemical processes such as bleaching, dyeing, lightening and relaxing hair may also be taught. All cosmetology disciplines learn safety and sanitation best practices. Barber students can expect to learn some elements of anatomy, physiology, bacteriology and some small elements of pharmacology. It also teaches facial hair techniques, including traditional and modern shaves. Generally barber programs touch on scalp massage and treatments. Advanced barber training may include custom shave designs. It is more common in barbering schools than other cosmetology disciplines to get some business and ethics education, since entrepreneurship is especially common in the barbering trade with many professionals choosing to open their own barbershops. All the skills learned in barber school will be tested at the board exams, which typically feature a written and practical exam. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div><br><br>
+                        <br><br><br><br>
+<div class="container">
+  <ul class="pagination justify-content-end">
+    <li class="page-item"><a class="page-link" href="appointment.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="aboutus.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="Our-Services.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="Our-barbers.html">4</a></li>
+    <li class="page-item"><a class="page-link" href="appointment.html">5</a></li>
+    <li class="page-item"><a class="page-link" href="contact.html">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+<div class="container">
+  <span class="badge badge-pill badge-danger" data-toggle="tooltip" title="You are in Contact">Contact</span>
+</div>
+<br><br>
+<i class='fab fa-facebook-f' style='color: blue'></i>
+<i class='fab fa-google-plus-g' style='color: red'></i>
+<i class='fab fa-linkedin' style='color:darkblue'> </i>
+<br><br>
+<div class="container">                 
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="aboutus.html">About Us</a></li>
+    <li class="breadcrumb-item"><a href="Our-Services.html">Our Services</a></li>
+    <li class="breadcrumb-item"><a href="Our-barbers.html">Our Barbers</a></li>
+    <li class="breadcrumb-item"><a href="appointment.html">Appointment</a></li>
+    <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+{{> footer}}
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Saloon</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+		<style>
+			.top-navbar {
+				position: relative;
+				z-index: 10;
+			}
+
+			.top-navbar .navbar {
+				padding: 15px 0px;
+				position: fixed;
+				width: 100%;
+				transition: height 0.3s ease-out, background 0.3s ease-out,
+					box-shadow 0.3s ease-out;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+				z-index: 100;
+			}
+			.top-navbar .navbar-light .navbar-nav .nav-link {
+				color: #010101;
+				font-size: 18px;
+				padding: 10px 20px;
+				border-radius: 20px;
+			}
+
+			.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+				background: #d4061e;
+				color: #ffffff;
+			}
+			.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+				background: #d4061e;
+				color: #ffffff;
+				border-radius: 10px;
+			}
+			.navbar-expand-lg .navbar-nav .dropdown-menu {
+				border: none;
+				box-shadow: 20px 50px 60px rgba(0, 0, 0, 0.5);
+			}
+
+			.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
+				background: #d4061e;
+				color: #ffffff;
+			}
+			.navbar-light .navbar-toggler:hover {
+				background: #d4061e;
+			}
+			.carousel-inner img {
+				width: 100%;
+				height: 100%;
+			}
+			.bg-f {
+				background-image: url('footer.jpg');
+				background-attachment: scroll;
+				background-clip: initial;
+				background-color: rgba(0, 0, 0, 0);
+				background-origin: initial;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+			.bg-f::before {
+				background: #010101;
+				content: '';
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+				opacity: 0.8;
+			}
+			.footer-area .container {
+				position: relative;
+				z-index: 1;
+			}
+			.footer-area h3 {
+				color: #ffffff;
+				text-transform: uppercase;
+				font-size: 24px;
+				border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+				margin-bottom: 10px;
+			}
+			.footer-area p {
+				font-size: 15px;
+				color: rgba(255, 255, 255, 0.8);
+				margin: 0;
+				padding-bottom: 10px;
+			}
+			.footer-area p.lead {
+				font-size: 19px;
+				color: #ffffff;
+				margin-bottom: 15px;
+			}
+			.footer-area p.lead a {
+				color: #ffffff;
+				margin-bottom: 15px;
+			}
+			.footer-area p.lead a:hover {
+				color: #d0a772;
+			}
+			.footer-area p a {
+				font-size: 18px;
+				color: #ffffff;
+			}
+			.footer-area p a:hover {
+				color: #d0a772;
+			}
+		</style>
+	</head>
+	<body>
+		<footer class="footer-area bg-f">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<br />
+						<h3>About Us</h3>
+						<p>
+							We employ only highly qualified barbers who are not just
+							professionals, but also enjoy maintaining the atmosphere of a
+							classic barbershop.
+						</p>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<br />
+						<h3>Opening hours</h3>
+						<p><span class="text-color">Monday :</span> 9:Am - 10PM</p>
+						<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+						<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+						<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<br />
+						<h3>Contact information</h3>
+						<p class="lead">location unknown</p>
+						<p class="lead"><a href="#">99999999</a></p>
+						<p><a href="#">barber@g.com</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+	</body>
+</html>
